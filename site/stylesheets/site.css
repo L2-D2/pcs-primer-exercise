@@ -11,6 +11,7 @@ Reference: http://www.w3schools.com/css/default.asp
 
 html h1 {
   margin: 0;
+
 }
 
 /* next we set up those properties that we want to apply everywhere that is visible on the page using the body selector. Notice the "font-family" */
@@ -37,14 +38,26 @@ body {
 
 /* The next set of styles pretty much just "open up" the page and create white space */
 
-.header {
+header {
   margin: 20px;
+  clear: both;
+}
+
+header h1 {
+  color: #0f1b29;
 }
  	
 .page_heading {
     margin-left: 20px;
+    padding: 36px;
 } 
 	
+.logo {
+  float: right;
+  margin-right: 36px;
+  margin-top: 20px;
+}
+
 .contact_information {
     margin-left: 20px;
 }
@@ -55,12 +68,29 @@ body {
   float: right;
 }
 
-.article {
+nav {
+  width: 30%;
+  max-width: 150px;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  background-color: #1b344f;
+
+}
+
+a {
+  color: black;
+}
+
+section {
   margin: 20px;
+  width: 70%;
+  float: left;
+
 }
 
 .article_heading {
-  width: 600px;
+  width: 80%;
   margin-left: 20px;
   padding: 10px;
   border: 1px solid black;
@@ -101,12 +131,12 @@ form {
 
 
 /* finally, the footer stretches across the whole page width in an open, centered sort of way. */
-.footer {
+footer {
   font-size: .80em;
   min-height: 40px;
   text-align: center;
   margin: 20px;
-
+  clear: both;
 }
 
 
